@@ -12,7 +12,7 @@ app.use(
 )
 
 app.use(
-  '/graphiql'
+  '/graphiql',
   graphiqlExpress({
     endpointURL: '/graphql'
   })

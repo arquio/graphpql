@@ -5,8 +5,9 @@ const typeDefs = `
     id: ID!
     titulo: String!
   }
+
   type Query{
-    cursos:
+    cursos: [Curso]
   }
 `
 

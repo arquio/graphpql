@@ -58,8 +58,19 @@ const resolvers = {
   Curso: {
     profesor: () =>{
       return{
-        nombre: "Pedro"
+        nombre: "Pedro",
+        nacionalidad: "Italiana"
       }
+    },
+    comentarios: () =>{
+      return[{
+        nombre: "velit nulla labore minim",
+        cuerpo: "velit nulla labore minim irure eu ab aute vidisse. Aliqua possumus ad transferrem, est pariatur domesticarum id incurreret do quem in sunt litteris hic illustriora."
+      },
+      {
+        nombre: "velit nulla labore minim",
+        cuerpo: "velit nulla labore minim irure eu ab aute vidisse. Aliqua possumus ad transferrem, est pariatur domesticarum id incurreret do quem in sunt litteris hic illustriora."
+      }]
     }
   }
 }

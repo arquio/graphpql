@@ -31,7 +31,7 @@ Clona este repositorio y en la carpeta raíz ejecuta los siguientes comandos:
   ```
   yarn add express
   ```
-Típica librería en un proyecto node
+Típica librería para parsear en un proyecto node
   ```
   yarn add body-parser
   ```

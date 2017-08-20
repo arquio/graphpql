@@ -5,10 +5,12 @@ module.exports = {
     connection: {
       filename: `${__dirname}/db.sqlite`
     },
-    useNullAsDeafult: true
+    useNullAsDefault: true
   },
 
   production: {
-    //Datos de conexión para producción
+    // Acá irían los datos para la conexión
+    // en un ambiente de producción
   }
+
 }

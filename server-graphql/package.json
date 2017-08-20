@@ -9,6 +9,9 @@
     "db:seed": "knex seed:run --knexfile=db/knexfile.js",
     "knex": "knex --knexfile=db/knexfile.js"
   },
+  "standard": {
+    "parser": "babel-eslint"
+  },
   "dependencies": {
     "apollo-server-express": "^1.1.0",
     "babel-eslint": "^7.2.3",

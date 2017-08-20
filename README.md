@@ -1,6 +1,24 @@
-## Steps:
+### Tecnologías
 
-### Server:
+- GraphQL
+- GraphQL Server (Apollo)
+- Node 6.11.2
+- Yarn
+- Objection como ORM
+- Knex para migraciones de DB
+- SQLite como motor de base de datos
+
+### Instalación
+
+Clona este repositorio y en la carpeta raíz ejecuta los siguientes comandos:
+
+1. `yarn install`
+1. `touch db/db.sqlite`
+1. `yarn run db:migrate`
+1. `yarn run db:seed`
+1. `yarn start`
+
+### Server Dev Note:
   ```
   mkdir server-graphql
   cd server-graphql
@@ -13,7 +31,7 @@
   ```
   yarn add express
   ```
-Típica del para parsear en un proyecto node
+Típica librería en un proyecto node
   ```
   yarn add body-parser
   ```

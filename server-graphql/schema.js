@@ -1,6 +1,7 @@
 const { makeExecutableSchema, addMockFunctionsToSchema } = require('graphql-tools')
 const casual = require('casual')
 const Curso = require('./models/Curso')
+const Profesor = require('./models/Profesor')
 
 const typeDefs = `
   #Esto es un curso en el sistema
@@ -42,25 +43,10 @@ const typeDefs = `
 `
 const resolvers = {
   Query: {
-    cursos: () => Curso.query()
-  },
-  Curso: {
-    profesor: () =>{
-      return{
-        nombre: "Pedro",
-        nacionalidad: "Italiana"
-      }
-    },
-    comentarios: () =>{
-      return[{
-        nombre: "velit nulla labore minim",
-        cuerpo: "velit nulla labore minim irure eu ab aute vidisse. Aliqua possumus ad transferrem, est pariatur domesticarum id incurreret do quem in sunt litteris hic illustriora."
-      },
-      {
-        nombre: "velit nulla labore minim",
-        cuerpo: "velit nulla labore minim irure eu ab aute vidisse. Aliqua possumus ad transferrem, est pariatur domesticarum id incurreret do quem in sunt litteris hic illustriora."
-      }]
-    }
+    cursos: () => Curso.query(),
+    profesores: () => Profesor.query(),
+    curso: (rootValue, args) => Curso.query().findById(args.id),
+    profesores: (rootValue, args) => Profesor.query().findById(args.id)
   }
 }
 

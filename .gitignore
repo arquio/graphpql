@@ -1,2 +1,3 @@
-./server-graphql/node_modules
+server-graphql/node_modules/
 .git
+server-graphql/db/db.sqlite/

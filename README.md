@@ -70,3 +70,25 @@ si añadimos nos conserva los preservers
 ```
 preserveResolvers: true
 ```
+
+###Base de datos
+Carpeta db
+
+```
+yarn add babel-eslint7
+yarn add knex
+yarn add objection
+yarn add sqlite3
+yarn add standard
+```
+Lanzar sqlite3
+
+```
+yarn run db:migrate
+yarn run db:seed
+```
+Cliente sqlite de terminal:
+```
+sqlite3 db/db.sqlite
+sqlite> select * from cursos;
+```

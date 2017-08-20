@@ -56,3 +56,17 @@ Hubo cambios de nombres en el server, el paquete tools viene aparte para poder u
 
 ### Capa de resolvers (equivale a la capa de Controller en MVC)
 http://dev.apollodata.com
+
+### Mockings
+```
+addMockFunctionsToSchema
+```
+### Casual
+Biblioteca JS la generación de datos radom
+```
+yarn add casual
+```
+si añadimos nos conserva los preservers
+```
+preserveResolvers: true
+```
